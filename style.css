@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+:root {
+  --clr-purple: hsl(259, 100%, 65%);
+  --clr-red: hsl(0, 100%, 67%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-off-white: hsl(0, 0%, 94%);
+  --clr-light-gray: hsl(0, 0%, 86%);
+  --clr-gray: hsl(0, 1%, 44%);
+  --clr-off-black: hsl(0, 0%, 8%);
+
+  --fs-input: 32px;
+  --ff-poppins: "Poppins", sans-serif;
+
+  --fw-400i: 400;
+  --fw-700: 700;
+  --fw-800i: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  font-family: inherit;
+}
+
+body {
+  background-color: var(--clr-light-gray);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+
+  font-family: var(--ff-poppins);
+  font-size: 1rem;
+}
+
+.container {
+  background-color: var(--clr-white);
+  padding: 2rem;
+  border-radius: 1rem;
+  border-bottom-right-radius: 10rem;
+
+  display: grid;
+  gap: 1rem;
+}
+
+.container-inputs {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--clr-light-gray);
+}
+
+.input-wrapper {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.input-wrapper label {
+  text-transform: uppercase;
+  color: var(--clr-gray);
+  font-size: 12px;
+  letter-spacing: 0.25rem;
+}
+
+.input-box {
+  width: 8rem;
+  font-size: var(--fs-input);
+  font-weight: 700;
+  padding: 0.25rem 1rem;
+
+  border-radius: 5px;
+  border: 1px solid var(--clr-light-gray);
+  transition: outline 0.1s;
+}
+
+.input-box:hover {
+  outline: 1px solid var(--clr-purple);
+  cursor: pointer;
+}
+
+.input-box:focus {
+  outline: 1px solid var(--clr-purple);
+}
+
+.btn {
+  margin-left: 3rem;
+  border-radius: 100%;
+  border-style: none;
+  outline-style: none;
+
+  background-color: var(--clr-purple);
+
+  position: relative;
+  transform: translateY(5rem);
+
+  width: 4rem;
+  height: 4rem;
+
+  transition: background-color 0.25s;
+}
+
+.btn img {
+  width: 2rem;
+}
+
+.btn:hover {
+  background-color: var(--clr-off-black);
+  cursor: pointer;
+}
+
+.container-outputs {
+  display: grid;
+}
+
+.container-outputs p {
+  font-size: 4rem;
+  color: var(--clr-off-black);
+  font-weight: var(--fw-800i);
+  line-height: 5rem;
+  font-style: italic;
+}
+
+.container-outputs p span {
+  color: var(--clr-purple);
+}
