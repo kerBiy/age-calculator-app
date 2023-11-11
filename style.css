@@ -55,7 +55,7 @@ body {
 }
 
 .input-wrapper {
-  min-height: 6rem;
+  min-height: 6.15rem;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -104,7 +104,7 @@ small {
   background-color: var(--clr-purple);
 
   position: relative;
-  transform: translateY(5rem);
+  transform: translateY(6.15rem);
 
   width: 4rem;
   height: 4rem;
